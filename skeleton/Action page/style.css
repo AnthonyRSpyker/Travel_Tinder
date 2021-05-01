@@ -1,0 +1,18 @@
+.card{
+    margin-top:100px;
+    margin-left: 750px;
+    height:500px;
+   
+
+}
+
+#nav{
+    background-color: aqua;
+
+}
+
+#img{
+    background-color: red;
+    height:300px;
+    width: 500px;
+}
