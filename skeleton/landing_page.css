@@ -1,58 +1,48 @@
 
-.button-rounded-hover {
-    border: 0;
-    border-radius: 5000px;
-    padding: 1rem 2rem;
-    text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    transition: all 0.35s ease;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-            
-            
-  }
-  
-  .button-rounded-hover:before {
-    opacity: 0;
-    content: "";
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    border-radius: inherit;
-    background-color: #fefefe;
-    transition: all 0.3s;
-    -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  
-  .button-rounded-hover:after {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    border: 5px solid #115b8d;
-    content: '';
-    border-radius: inherit;
-  }
-  
-  .button-rounded-hover:hover,
-  .button-rounded-hover:focus {
-    background-color: #115b8d;
-  }
-  
-  .button-rounded-hover:hover:before,
-  .button-rounded-hover:focus:before {
-    -webkit-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-            transform: translateX(0%);
-    opacity: 0.25;
-  }
+.hero-full-screen {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("https://images.unsplash.com/photo-1524850011238-e3d235c7d4c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1387&q=80") center center no-repeat;
+  background-size: cover;
+}
+
+.hero-full-screen .middle-content-section {
+  text-align: center;
+  color:darkorange;
+  font-size: x-large;
+  font-family: monospace;
+
+}
+
+.hero-full-screen .top-content-section {
+  width: 100%;
+}
+
+.hero-full-screen .bottom-content-section {
+  padding: 5rem;
+}
+
+.button_large {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: aqua;
+  font-size: 18px;
+  font-family: monospace;
+}
+
+
+
   
   
