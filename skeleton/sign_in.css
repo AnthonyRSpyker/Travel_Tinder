@@ -1,51 +1,75 @@
+body {
+  background: url("https://images.unsplash.com/photo-1524850011238-e3d235c7d4c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1387&q=80") center center no-repeat;
+  margin-bottom: 50px;
+  border: 0 35px solid, color, white;
+  border-radius: 30px;
+  overflow: none;
+  width: 95%;
+  
+
+
+ 
+   
+}
 
 .sign-in-form {
-    padding: 1rem 1.5em;
+    margin: 25% 25%;
+    padding: 1rem 1.5em; 
     border-radius: .5rem;
-    background-color: #3d454f;
+    background: url("https://images.unsplash.com/photo-1524850011238-e3d235c7d4c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1387&q=80") center center no-repeat;
+    text-align: center; 
+    background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    
   }
-  
-  .sign-in-form h4 {
-    color: white;
+  /* this is the title */
+   .sign-in-form h4 {
+    color:brown;
     margin-bottom: 1rem;
     font-weight: 600;
     text-transform: uppercase;
-  }
-  
+  } 
+  /* this is username and password title */
   .sign-in-form label {
     text-transform: uppercase;
-    color: #adadad;
+    color:#44c8ed;
     letter-spacing: 1px;
     font-weight: 600;
     margin-bottom: 1rem;
   }
-  
+  /* this is text box username  */
   .sign-in-form input {
-    color: white;
+    color: black;
   }
   
   .sign-in-form input:focus {
     opacity: .8;
+    border-radius: 30px;
   }
   
   .sign-in-form-username,
   .sign-in-form-password {
     border-radius: 30px;
-    border: none;
-    opacity: .1;
     transition: all ease .4s;
+    background-color:bisque;
   }
-  
+  /* this is for sign-in button */
   .sign-in-form-button {
-    border-radius: 30px;
+    
+    border-radius: 15px;
     border: 1px solid #fff;
     color: #fff;
     background-color: transparent;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    width: 100%;
+    letter-spacing: 3px;
+     
+    width: 75%;
     padding: 1rem;
     transition: all ease .4s;
+    background-color: bisque;
   }
   
   .sign-in-form-button:hover {
