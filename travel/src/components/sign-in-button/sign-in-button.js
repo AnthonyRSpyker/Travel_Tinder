@@ -1,7 +1,7 @@
 import React from "react"
 
 
-function SignIn(prop) {
+function SignInButton(prop) {
 
     return (
 
@@ -10,4 +10,4 @@ function SignIn(prop) {
     )
 }
 
-export default SignIn;
+export default SignInButton;
