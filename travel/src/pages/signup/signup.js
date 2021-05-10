@@ -6,9 +6,12 @@ import "./signup.css"
 
 function signup() {
 
-  return (
+  return ( 
     
-
+      <div class="hero-full-screen">
+    
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"></link>
 <form>
   <div class="form-icons">
     <h4>Register for an account</h4>
@@ -140,7 +143,7 @@ function signup() {
         <span>South America</span>
       </div>
       
-      <h1>What is your gender?</h1>
+      <h1>What is your prefered Gender?</h1>
 
       <div class="mobile-app-toggle" data-mobile-app-toggle>
         <button class="button">Male</button>
@@ -153,7 +156,9 @@ function signup() {
   
 
   <button class="button expanded">Sign Up</button>
-</form>)};
+</form>
+</div>
+    )};
 
 
 
