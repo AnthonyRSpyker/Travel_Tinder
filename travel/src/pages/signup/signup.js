@@ -15,6 +15,7 @@ function signup() {
 <form>
   <div class="form-icons">
     <h4>Register for an account</h4>
+    <div class="all-form">
 
     <div class="input-group">
       <span class="input-group-label">
@@ -56,7 +57,7 @@ function signup() {
     </span>
     <input class="input-group-field" type="text" placeholder="What Language's do you speak?"></input>
   </div>
-
+</div>
 
 <h1>What continents do you want to travel to?</h1>
 <div class="callout" id="switch-toggle-all">
