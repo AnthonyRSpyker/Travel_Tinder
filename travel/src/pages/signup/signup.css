@@ -1,82 +1,125 @@
 body {
-    background: url("https://images.unsplash.com/photo-1524850011238-e3d235c7d4c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1387&q=80") center center no-repeat;
-    margin-bottom: 50px;
-    border: 0 35px solid, color, white;
-    border-radius: 30px;
-    overflow: none;
-    width: 95%;
+  background: url("https://images.unsplash.com/photo-1524850011238-e3d235c7d4c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1387&q=80") center center no-repeat;
+  margin-bottom: 50px;
+  border: 0 35px solid, color, white;
+  border-radius: 30px;
+  overflow: none;
+  width: 95%;
+
+}
+.all-form{
+  margin-right: 10%;
+  margin-left: 15%
   
-  }
-  /* basic form section. */
-  form .form-icons {
-    text-align: center;
-  }
+}
+h4 {
+  font-family: monospace;
+  font-size: 60px;
+  color:coral;
+  margin-left: 20%;
+  font-weight: bold;
+
+}
+/* basic form section. */
+form .form-icons {
+  text-align: center;
   
-  form .form-icons h4 {
-    margin-bottom: 1rem;
-  }
+}
+
+form .form-icons h4 {
+  margin-bottom: 1rem;
   
-  form .form-icons .input-group-label {
-    background-color: #1779ba;
-    border-color: #1779ba;
-  }
+}
+
+form .form-icons .input-group-label {
+  background-color: #1779ba;
+  border-color: #1779ba;
+ 
   
-  form .form-icons .input-group-field {
-    border-color: #1779ba;
-  }
+}
+
+form .form-icons .input-group-field {
+  border-color: #1779ba;
+ 
+}
+
+form .form-icons .fa {
+  color: white;
+  width: 1rem;
   
-  form .form-icons .fa {
-    color: white;
-    width: 1rem;
-  }
+}
+.input-group-field {
+  border-color: #1779ba;
   
-  /* continents choice. */
+};
+
+/* continents choice. */
+h1 {
+  font-family: monospace;
+  font-size: 40px;
+  color:coral;
+  margin-left: 20%;
+  font-style: oblique;
+  font-weight:bold;
+}
+.callout {
+  margin-left: 10%;
+  margin-right: 5%;
+  opacity: 75%;
+}
+
+.switch-toggle-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+ margin-right: 10px;  
+ opacity: 125%;
+ font-family: monospace;
+ font-size: 40px;
+ color:black;       
+}
+
+.switch-toggle-wrapper .switch {
+  margin-bottom: 0;
+  margin-left: 8%;
   
-  .switch-toggle-wrapper {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 1rem;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  
-  .switch-toggle-wrapper .switch {
-    margin-bottom: 0;
-  }
-  
-  /* Gender selection. */
-  
-  
-  .mobile-app-toggle {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    border: 1px solid #1779ba;
-    border-radius: 0.625rem;
-    overflow: hidden;
-    margin-bottom: 1rem;
-  }
-  
-  .mobile-app-toggle .button {
-    background: transparent;
-    color: #1779ba;
-    margin-bottom: 0;
-    -webkit-flex: 1 0 0;
-        -ms-flex: 1 0 0px;
-            flex: 1 0 0;
-  }
-  
-  .mobile-app-toggle .button:nth-child(n+1) {
-    border-left: 1px solid #1779ba;
-  }
-  
-  .mobile-app-toggle .button.is-active {
-    background: #1779ba;
-    color: #fefefe;
-  }
+}
+
+/* Gender selection. */
+
+
+.mobile-app-toggle {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 1px solid #1779ba;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.mobile-app-toggle .button {
+  background: transparent;
+  color: #1779ba;
+  margin-bottom: 0;
+  -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+}
+
+.mobile-app-toggle .button:nth-child(n+1) {
+  border-left: 1px solid #1779ba;
+}
+
+.mobile-app-toggle .button.is-active {
+  background: #1779ba;
+  color: #fefefe;
+}

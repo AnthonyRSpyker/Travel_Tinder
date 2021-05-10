@@ -1,27 +1,72 @@
+body {
+  background: url("https://images.unsplash.com/photo-1524850011238-e3d235c7d4c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1387&q=80") center center no-repeat;
+  margin-bottom: 50px;
+  border: 0 35px solid, color, white;
+  border-radius: 30px;
+  overflow: none;
+  width: 95%;
+
+}
+.all-form{
+  margin-right: 10%;
+  margin-left: 15%
+  
+}
+h4 {
+  font-family: monospace;
+  font-size: 60px;
+  color:coral;
+  margin-left: 20%;
+  font-weight: bold;
+
+}
 /* basic form section. */
 form .form-icons {
   text-align: center;
+  
 }
 
 form .form-icons h4 {
   margin-bottom: 1rem;
+  
 }
 
 form .form-icons .input-group-label {
   background-color: #1779ba;
   border-color: #1779ba;
+ 
+  
 }
 
 form .form-icons .input-group-field {
   border-color: #1779ba;
+ 
 }
 
 form .form-icons .fa {
   color: white;
   width: 1rem;
+  
 }
+.input-group-field {
+  border-color: #1779ba;
+  
+};
 
 /* continents choice. */
+h1 {
+  font-family: monospace;
+  font-size: 40px;
+  color:coral;
+  margin-left: 20%;
+  font-style: oblique;
+  font-weight:bold;
+}
+.callout {
+  margin-left: 10%;
+  margin-right: 5%;
+  opacity: 75%;
+}
 
 .switch-toggle-wrapper {
   display: -webkit-flex;
@@ -34,10 +79,17 @@ form .form-icons .fa {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+ margin-right: 10px;  
+ opacity: 125%;
+ font-family: monospace;
+ font-size: 40px;
+ color:black;       
 }
 
 .switch-toggle-wrapper .switch {
   margin-bottom: 0;
+  margin-left: 8%;
+  
 }
 
 /* Gender selection. */
