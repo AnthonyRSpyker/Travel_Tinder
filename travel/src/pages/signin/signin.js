@@ -5,34 +5,34 @@ import { useHistory } from "react-router-dom"
 
 
 function SignIn() {
-    const history = useHistory();
+  //   const history = useHistory();
 
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
+  //   const [email, setEmail] = useState("")
+  //   const [password, setPassword] = useState("")
 
 
-    function profilePageDirection(){
-        return () => history.push("../signup")
-    }
-    function returnHome () {
-        return () => history.push("../")
-    }
-    function handleSubmit (event){
+  //   function profilePageDirection(){
+  //       return () => history.push("../signup")
+  //   }
+  //   function returnHome () {
+  //       return () => history.push("../")
+  //   }
+  //   function handleSubmit (event){
 
-        const userEmail = event.target.value
-        setEmail(userEmail)
+  //       const userEmail = event.target.value
+  //       setEmail(userEmail)
 
-        const userPassword = event.target.value
-        setPassword(userPassword)
+  //       const userPassword = event.target.value
+  //       setPassword(userPassword)
 
-        if(login){
-            profilePageDirection()
-        }
-        else {
-            returnHome()
-        }
+  //       if(login){
+  //           profilePageDirection()
+  //       }
+  //       else {
+  //           returnHome()
+  //       }
 
-    }
+  //   }
     
   return (
     
