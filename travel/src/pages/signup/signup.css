@@ -20,7 +20,7 @@ h4 {
   font-weight: bold;
 
 }
-/* basic form section. */
+
 form .form-icons {
   text-align: center;
   
@@ -53,7 +53,7 @@ form .form-icons .fa {
   
 };
 
-/* continents choice. */
+
 h1 {
   font-family: monospace;
   font-size: 40px;
@@ -91,8 +91,6 @@ h1 {
   margin-left: 8%;
   
 }
-
-/* Gender selection. */
 
 
 .mobile-app-toggle {
