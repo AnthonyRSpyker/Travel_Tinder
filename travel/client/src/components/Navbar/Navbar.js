@@ -1,43 +1,31 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 
 function NavBar() {
 
+  const history = useHistory()
     return (
 
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/">
+      <h1 className="navbar-brand">
         TravelTinder
-      </Link>
+      </h1>
       <div>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link
-              to="/"
-              className={
-                window.location.pathname === "/" 
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
+            <h3 onClick = {() => history.push("../")}>
               Log-Out
-            </Link>
+            </h3>
           </li>
           <li className="nav-item">
-            <Link
-              to="/matches"
-              className={window.location.pathname === "/matches" ? "nav-link active" : "nav-link"}
-            >
+            <h3 onClick = {() => history.push("../matches")}>
               Matches
-            </Link>
+            </h3>
           </li>
           <li className="nav-item">
-            <Link
-              to="/personalprofile"
-              className={window.location.pathname === "/personalprofile" ? "nav-link active" : "nav-link"}
-            >
+            <h3 onClick = {() => history.push("../profile")}>
               Your Profile
-            </Link>
+            </h3>
           </li>
         </ul>
       </div>
