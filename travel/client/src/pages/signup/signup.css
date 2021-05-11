@@ -5,11 +5,11 @@ body {
   border-radius: 30px;
   overflow: none;
   width: 95%;
-
+  border-radius: 5%;
 }
 .all-form{
   margin-right: 10%;
-  margin-left: 15%
+  margin-left: 15%;
   
 }
 h4 {
@@ -22,12 +22,13 @@ h4 {
 }
 
 form .form-icons {
-  text-align: center;
+  border-radius: 25%;
   
 }
 
 form .form-icons h4 {
   margin-bottom: 1rem;
+  
   
 }
 
@@ -40,17 +41,18 @@ form .form-icons .input-group-label {
 
 form .form-icons .input-group-field {
   border-color: #1779ba;
+  
  
 }
 
 form .form-icons .fa {
   color: white;
   width: 1rem;
+  margin-left: 10%;
   
 }
 .input-group-field {
   border-color: #1779ba;
-  
 };
 
 
@@ -61,6 +63,7 @@ h1 {
   margin-left: 20%;
   font-style: oblique;
   font-weight:bold;
+  
 }
 .callout {
   margin-left: 10%;
@@ -121,3 +124,28 @@ h1 {
   background: #1779ba;
   color: #fefefe;
 }
+
+.polls {
+  margin-bottom: 1rem;
+}
+
+.polls .polls-question {
+  margin-bottom: .5rem;
+  
+}
+
+.polls .polls-question .polls-question-label {
+  color: #1779ba;
+  font-weight: 500;
+  margin-right: .25rem;
+}
+
+.polls .polls-submit {
+  margin-top: .3rem;
+}
+
+.polls .polls-submit .button {
+  margin-right: .5rem;
+  text-transform: uppercase;
+}
+
