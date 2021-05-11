@@ -1,10 +1,11 @@
 import React from "react"
 import "./signup.css"
+import { useHistory } from "react-router-dom"
 
 
+function Signup() {
 
-
-function signup() {
+  const history = useHistory();
 
   return ( 
     
@@ -156,7 +157,7 @@ function signup() {
   
   
 
-  <button class="button expanded">Sign Up</button>
+  <button class="button expanded" onClick = {() => history.push("../matching_page")}>Sign Up</button>
 </form>
 </div>
     )};
@@ -164,4 +165,4 @@ function signup() {
 
 
 
-export default signup;
+export default Signup;
