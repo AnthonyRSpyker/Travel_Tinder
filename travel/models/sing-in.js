@@ -1,42 +1,44 @@
-const mongoose = require('mongoose');
-const bcrypt=require('bcrypt');
-const Schema = mongoose.Schema; 
-const SALT_WORK_FACTOR=10;
+const mongoose= require('mongoose');
+const bcrypt= require('bcrypt');
+const Schema= mongoose.Schema;
 
 const UserSchema= new Schema({
-    email: {type:String, required: true, index: {unique: true}},
-    password: { type: String, required: true }
+    username: {type: String,required: true, min:8},
+    password: { type: String, required: true },
+    role: {type: String, enum: ['admin','user'],required: true},
+    favs: [],
+    matches: [],
+    dislikes : []
+
+
 
 });
 
-UserSchema.pre(save,function(next){
-    const user=this;
-
-    if(!user.isModified('password'))
+UserSchema.pre('save', function(next){
+    if(!this.isModified('password'))
         return next();
-    
-    bcrypt.genSalt(SALT_WORK_FACTOR, function(err,salt){
-        if (err) return next(err);
-
-        bcrypt.hash(user.password,salt,function(err,hash){
-            if(err) return next(err);
-            
-            user.password=hash;
-            next();
-        });
+    bcrypt.hash(this.password,10,(err,passwordHash)=>{
+        if(err)
+            return(next(err));
+        this.password=passwordHash;
+        next();
     });
-
 });
-
-UserSchema.methods.comparePassword= function(candidatePassword, cb) {
-    bcrypt.compare(candidatePassword,this.password, function(err, isMatch){
-        if (err) return cb(err);
-        cb(null, isMatch);
+// plain text vs hash
+UserSchema.methods.comparePassword= function(passwordClient, cb) {
+    bcrypt.compare(passwordClient,this.password, (err, isMatch)=>{
+        if (err) 
+            return cb(err);
+        else{
+            if(!isMatch)
+                return cb(null,isMatch);
+            return cb(null,this);
+        }
+        
     });
 };
 
-model.exports=mongoose.model(User, UserSchema);
-
+module.exports=mongoose.model('User', UserSchema)
 
 
 
