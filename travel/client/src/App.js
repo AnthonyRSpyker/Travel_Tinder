@@ -4,7 +4,7 @@ import SignIn from "./pages/signin/signin.js"
 import SignUp from "./pages/signup/signup.js"
 import Matching from "./pages/matching_page/matching.js"
 import Matches from "./pages/matches/matches.js"
-import Profile from ".pages/profile/profile.js"
+import Profile from "./pages/profile/profile.js"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 function App() {
