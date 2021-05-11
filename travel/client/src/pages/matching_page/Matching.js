@@ -1,13 +1,13 @@
 import React from "react"
 import Navbar from "../../components/Navbar/Navbar"
-// import ProfileCard from "../../compnents/ProfileCard/ProfileCard"
+import ProfileCard from "../../components/ProfileCard/ProfileCard"
 
 function Matching () {
 
     return(
         <div>
         <Navbar />
-            {/* <ProfileCard /> */}
+            <ProfileCard />
         
         </div>
 
