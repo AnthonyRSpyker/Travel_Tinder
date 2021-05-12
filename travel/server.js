@@ -23,3 +23,23 @@ app.listen(PORT, function() {
 });
 
 
+// const express= require('express');
+// const  app= express();
+// const cookieParser= require('cookie-parser');
+// const mongoose= require('mongoose')
+// app.use(cookieParser());
+// app.use(express.json());
+
+// const PORT = process.env.PORT || 3000;
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/<dbname>", {
+//   useNewUrlParser: true,
+  
+//    useUnifiedTopology: true 
+// });
+
+// const userRouter= require('./routes/User');
+// app.use('/user', userRouter);
+
+// app.listen(PORT,()=>{
+//     console.log('express sever started')
+// }); 
