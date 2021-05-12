@@ -1,24 +1,15 @@
-
-.profile-card-action-icons {
-    background-color: #fefefe;
-    font-weight: 400;
-    margin-bottom: 1.6rem;
-    border-radius: 0.125rem;
-    box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.18), 0 0.125rem 2px rgba(0, 0, 0, 0.36);
-    
-  }
-  
-  .profile-card-action-icons .card-section {
+.profile-card-action-icons .card-section {
     background-color: inherit;
     padding: 0.5rem 0 0;
-    padding-left: 0.5rem 0 0;
-    margin-left: 5%;
+   
+    margin-left: 10%;
   }
   
   .profile-card-action-icons .card-section .profile-card-header,
   .profile-card-action-icons .card-section .profile-card-about {
     border-bottom: 0.0625rem solid #cacaca;
     padding: 0.7rem 1rem;
+    padding-left: 10px;
   }
   
   .profile-card-action-icons .card-section .profile-card-header {
@@ -30,14 +21,14 @@
             align-items: flex-start;
   }
   
-  .profile-card-action-icons .card-section .profile-card-header .profile-card-avatar {
-    margin-right: 0.5rem;
-  }
+  
   
   .profile-card-action-icons .card-section .profile-card-header .profile-card-avatar .avatar-image {
     border-radius: 50%;
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 15rem;
+    height: 15rem;
+    
+    
   }
   
   .profile-card-action-icons .card-section .profile-card-header .profile-card-author {
@@ -46,28 +37,28 @@
             flex: 1 0 0;
     margin-top: 0.3rem;
     padding-bottom: 0;
+    font-family: monospace;
   }
   
-  .profile-card-action-icons .card-section .profile-card-header .profile-card-author .author-title,
-  .profile-card-action-icons .card-section .profile-card-header .profile-card-author .author-description {
-    margin-bottom: 0;
-  }
   
-  .profile-card-action-icons .card-section .profile-card-header .profile-card-author .author-title {
-    color: #0a0a0a;
-  }
+  
+  
   
   .profile-card-action-icons .card-section .profile-card-header .profile-card-author .author-description {
     color: #8a8a8a;
     font-size: 25px;
+    font-family: monospace;
   }
   
   .profile-card-action-icons .card-section .profile-card-about .about-title {
     text-transform: uppercase;
+    font-family: monospace;
+    
   }
   
   .profile-card-action-icons .card-section .profile-card-about .separator-left {
     text-align: left;
+    font-family: monospace;
   }
   
   .profile-card-action-icons .card-section .profile-card-about .separator-left::before, .profile-card-action-icons .card-section .profile-card-about .separator-left::after {
@@ -95,12 +86,9 @@
   
   .profile-card-action-icons .card-section .profile-card-about .about-content {
     margin-bottom: 0;
-    font-size: 40%;
+    font-size: 50%;
   }
-  
-  .profile-card-action-icons .card-section .profile-card-about .about-skills {
-    margin-top: 0.6rem;
-  }
+
   
   .profile-card-action-icons .card-section .profile-card-about .about-skills ul.arrow {
     list-style-type: none;
@@ -116,7 +104,7 @@
     float: left;
     color: #1779ba;
     margin-right: 0.5rem;
-    font-size: 150%;
+    font-size: 100%;
   }
   
   .profile-card-action-icons .card-section .profile-card-action {
@@ -146,4 +134,11 @@
     color: #1779ba;
   }
   
-  
+  h5 {
+      font-size:xx-large;
+      font-family: monospace;
+      font-weight: bold;
+      font-variant:unset;
+      text-transform: uppercase;
+      text-decoration: underline;
+  }
