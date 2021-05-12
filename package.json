@@ -1,0 +1,28 @@
+{
+  "name": "Travel_Tinder",
+  "version": "1.0.0",
+  "description": "An application that acts as meet and travel with people,.",
+  "main": "index.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyRSpyker/Travel_Tinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnthonyRSpyker/Travel_Tinder/issues"
+  },
+  "homepage": "https://github.com/AnthonyRSpyker/Travel_Tinder#readme"
+}
