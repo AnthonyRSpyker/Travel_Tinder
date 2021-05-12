@@ -14,20 +14,17 @@ function FriendCard(props) {
     </img>
     <div>
       <div class="profile-card-author">
-        <h5 class="author-title">Harry Manchanda</h5>
-        <p class="author-description">Front End Web Developer</p>
+        
+      <h5 class="about-title separator-left">User Name</h5>
       </div>
     </div>
     <div class="profile-card-about">
-      <h5 class="about-title separator-left">About Me</h5>
-      <p class="about-content">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem eveniet nulla quae ullam sit iure voluptatum, nesciunt voluptas perferendis, minus natus in quaerat?
-      </p>
-      <div class="row about-skills">
+    <div class="row about-skills">
         <div class="small-6 columns">
           <ul class="arrow">
-            <li>Coding</li>
-            <li>Cricket</li>
+            <li>Age</li>
+            <li>Perfered Gender</li>
+            <h5 class="about-title separator-left">Countries I want to travel too</h5>
             <li>Enjoying</li>
           </ul>
         </div>
@@ -38,6 +35,10 @@ function FriendCard(props) {
             <li>Smiling</li>
           </ul>
         </div>
+        <h5 class="about-title separator-left">About Me</h5>
+      <p class="about-content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem eveniet nulla quae ullam sit iure voluptatum, nesciunt voluptas perferendis, minus natus in quaerat?
+      </p>
       </div>
     </div>
     <div class="profile-card-action">
