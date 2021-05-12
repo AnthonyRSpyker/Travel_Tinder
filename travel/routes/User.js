@@ -14,7 +14,7 @@ const signToken= userID=>{
 }
 
 
-userRouter.post('/register', (req,res)=>{
+userRouter.post('/signup', (req,res)=>{
     const{username,password,role}=req.body;
     User.findOne({username},(err,user)=>{
         if(err)
@@ -60,10 +60,10 @@ userRouter.get('/admin',passport.authenticate('jwt',{session:false}), (req,res)=
         res.status(403).json({message: {msgBody: "You are not authroized to view this page", msgError: true}})
 });
 
-userRouter.get('/authenticated', passport.authenticate('jwt'), {session:false}), (req,res)=>{
+userRouter.get('/authenticated', passport.authenticate('jwt', {session:false}), (req,res)=>{
     const {username,role}=req.user;
     res.status(200).json({isAuthenticated:true, user: {username,role}})
-}
+});
 
 //userRouter.post('/signupform',passport.authenticate('jwt',{session:false}), (req,res)=>{
   //  const signUp= new Signup(req.body);
