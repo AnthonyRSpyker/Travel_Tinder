@@ -1,5 +1,5 @@
 import React from "react"
-import { useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom" // {Link}
 import "./Navbar.css"
 
 function NavBar() {
@@ -8,17 +8,17 @@ function NavBar() {
     return (
   
 
-<div class="social-links">
-  <div class="row">
+<div className="social-links">
+  <div className="row">
     <h1>TravelTinder</h1>
-    <div class="small-6 medium-3 columns text-center mobile-stack">
-      <a onClick = {() => history.push("../")}><i class="fa fa-facebook" aria-hidden="true"></i>Log out</a>
+    <div className="small-6 medium-3 columns text-center mobile-stack">
+      <a onClick = {() => history.push("../")}><i className="fa fa-facebook" aria-hidden="true"></i>Log out</a>
     </div>
-    <div class="small-6 medium-3 columns text-center mobile-stack">
-      <a onClick = {() => history.push("../matches")}><i class="fa fa-instagram" aria-hidden="true"></i>Matches</a>
+    <div className="small-6 medium-3 columns text-center mobile-stack">
+      <a onClick = {() => history.push("../matches")}><i className="fa fa-instagram" aria-hidden="true"></i>Matches</a>
     </div>
-    <div class="small-6 medium-3 columns text-center mobile-stack">
-      <a onClick = {() => history.push("../profile")}><i class="fa fa-pinterest-p" aria-hidden="true"></i>Profile</a>
+    <div className="small-6 medium-3 columns text-center mobile-stack">
+      <a onClick = {() => history.push("../profile")}><i className="fa fa-pinterest-p" aria-hidden="true"></i>Profile</a>
     </div>
   </div>
 </div>

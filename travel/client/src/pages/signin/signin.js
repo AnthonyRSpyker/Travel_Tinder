@@ -39,13 +39,13 @@ function SignIn() {
   return (
     
     <form>
-    <div class="sign-in-form">
-      <h4 class="text-center">Sign In</h4>
+    <div className="sign-in-form">
+      <h4 className="text-center">Sign In</h4>
       <label for="sign-in-form-username">Username</label>
-      <input type="text" class="sign-in-form-username" id="sign-in-form-username" value="{email}"/>
+      <input type="text" className="sign-in-form-username" id="sign-in-form-username" value="{email}"/>
       <label for="sign-in-form-password">Password</label>
-      <input type="text" class="sign-in-form-password" id="sign-in-form-password" value="{password}"/>
-      <button onClick="{handleSubmit}" type="submit" class="sign-in-form-button" onClick = {() => history.push("../matching_page")}>Sign In</button>
+      <input type="text" className="sign-in-form-password" id="sign-in-form-password" value="{password}"/>
+      <button onClick="{handleSubmit}" type="submit" className="sign-in-form-button" onClick = {() => history.push("../matching_page")}>Sign In</button>
     </div>
   </form>
     );
