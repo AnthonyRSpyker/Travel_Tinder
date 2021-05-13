@@ -33,8 +33,9 @@
  const PORT = process.env.PORT || 3002;
  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/travelt", {
    useNewUrlParser: true,
-  
-    useUnifiedTopology: true 
+   useUnifiedTopology: true,
+   useCreateIndex: true,
+   useFindAndModify: false 
  });
 
  const userRouter= require('./routes/User');

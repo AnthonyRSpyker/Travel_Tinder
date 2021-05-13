@@ -38,8 +38,8 @@ UserSchema.methods.comparePassword= function(passwordClient, cb) {
     });
 };
 
-module.exports=mongoose.model('User', UserSchema)
+const Users = mongoose.model('User', UserSchema)
 
-
+module.exports = Users; 
 
 

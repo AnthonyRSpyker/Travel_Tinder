@@ -1,3 +1,10 @@
+let mongoose = require("mongoose");
+let db = require("../models");
+
+mongoose.connect("mongodb://localhost/travelt", {
+  useNewUrlParser: true,
+  useFindAndModify: false
+});
 
 const peopleSeed = [
     {
@@ -262,3 +269,15 @@ const peopleSeed = [
         bio: "This doesnt make any sense."
 
     }
+]
+
+db.Test.deleteMany({})
+  .then(() => db.Test.collection.insertMany(peopleSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
