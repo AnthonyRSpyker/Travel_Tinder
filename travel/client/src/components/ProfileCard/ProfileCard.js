@@ -6,53 +6,53 @@ function FriendCard(props) {
   return (
 
 <div className="Entire Card">
-    <div class="card profile-card-action-icons">
-    <div class="card-section">
-    <div class="profile-card-header">
-      <div class="profile-card-avatar">
-        <img class="avatar-image" src="https://i.imgur.com/3AeQRbR.jpg" alt="Harry Manchanda">
+    <div className="card profile-card-action-icons">
+    <div className="card-section">
+    <div className="profile-card-header">
+      <div className="profile-card-avatar">
+        <img className="avatar-image" src="https://i.imgur.com/3AeQRbR.jpg" alt="Harry Manchanda">
     </img>
     <div>
-      <div class="profile-card-author">
+      <div className="profile-card-author">
         
-      <h5 class="about-title separator-left">User Name</h5>
+      <h5 className="about-title separator-left">User Name</h5>
       </div>
     </div>
-    <div class="profile-card-about">
-    <div class="row about-skills">
-        <div class="small-6 columns">
-          <ul class="arrow">
+    <div className="profile-card-about">
+    <div className="row about-skills">
+        <div className="small-6 columns">
+          <ul className="arrow">
             <li>Age</li>
             <li>Perfered Gender</li>
-            <h5 class="about-title separator-left">Countries I want to travel too</h5>
+            <h5 className="about-title separator-left">Countries I want to travel too</h5>
             <li>Enjoying</li>
           </ul>
         </div>
-        <div class="small-6 columns">
-          <ul class="arrow">
+        <div className="small-6 columns">
+          <ul className="arrow">
             <li>Maths</li>
             <li>Dancing</li>
             <li>Smiling</li>
           </ul>
         </div>
-        <h5 class="about-title separator-left">About Me</h5>
-      <p class="about-content">
+        <h5 className="about-title separator-left">About Me</h5>
+      <p className="about-content">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem eveniet nulla quae ullam sit iure voluptatum, nesciunt voluptas perferendis, minus natus in quaerat?
       </p>
       </div>
     </div>
-    <div class="profile-card-action">
-      <div class="action-area">
-        <a href="#" class="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Like Harry Profile">
-          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-          <span class="show-for-sr">Like Harry Profile</span>
+    <div className="profile-card-action">
+      <div className="action-area">
+        <a href="#" className="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Like Harry Profile">
+          <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>
+          <span className="show-for-sr">Like Harry Profile</span>
         </a>
       </div>
       
-      <div class="action-area">
-        <a href="#" class="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Harry as a Friend">
-          <i class="fa fa-user-plus" aria-hidden="true"></i>
-          <span class="show-for-sr">Add Harry as a Friend</span>
+      <div className="action-area">
+        <a href="#" className="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add Harry as a Friend">
+          <i className="fa fa-user-plus" aria-hidden="true"></i>
+          <span className="show-for-sr">Add Harry as a Friend</span>
         </a>
       </div>
       

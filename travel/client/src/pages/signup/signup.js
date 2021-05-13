@@ -16,9 +16,9 @@ function Signup() {
       <form>
         <div className="form-icons">
           <h4>Register for an account</h4>
-          <div class="all-form">
+          <div className="all-form">
 
-            <div class="input-group">
+            <div className="input-group">
               <span className="input-group-label">
                 <i className="fa fa-user"></i>
               </span>
