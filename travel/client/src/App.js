@@ -8,28 +8,43 @@ import Profile from "./pages/profile/profile.js"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 function App() {
     return(
-  <Router>
+
+
+  <Router>   
+    <div>
     <Switch>
       <Route exact path="/">
+
         <Landing />
       </Route>
       <Route exact path="/signup">
         <SignUp />
       </Route>
       <Route exact path="/signin">
+
         <SignIn />
       </Route>
-      <Route exact path = "/profile">
-        <Profile />
-      </Route>
+
       <Route exact path="/matching_page">
         <Matching />
       </Route>
       <Route exact path="/matches">
         <Matches />
       </Route>
-    </Switch>
-  </Router>
+
+    
+
+      <Route exact path="/profile">
+        <Profile />
+      </Route>
+    </Switch> 
+    </div> 
+    </Router>
+      
+    
+   
+
+ 
     )
 }
 export default App;
