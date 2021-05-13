@@ -8,7 +8,7 @@ export const AuthContext=createContext();
 export default ({children})=>{
     const [user,setUser]= useState(null);
     const [isAuthenticated,setIsAuthenticated]= useState(false); // see if user is authenticated
-    const [isLoaded,setIsLoaded]= useState(false); // to see if app is loaded,
+    const [isLoaded,setIsLoaded]= useState(true); // to see if app is loaded,
 
     useEffect(()=>{
         AuthService.isAuthenticated().then(data=>{

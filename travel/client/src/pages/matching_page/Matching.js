@@ -6,9 +6,9 @@ function Matching () {
 
     return(
         <div>
+            
         <Navbar />
             <ProfileCard />
-        
         </div>
 
 
