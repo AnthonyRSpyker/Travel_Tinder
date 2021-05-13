@@ -9,7 +9,7 @@ function Matches() {
     return (
        <div>
         <Navbar /> 
-       <div className="matches-container">
+       
     
     <div className="people-you-might-know">
       <div className="add-people-header">
@@ -18,6 +18,8 @@ function Matches() {
         </h6>
       </div>
       </div>
+      <div className="first-match-profile">
+    <div className="first-match-profile">
       <div className="row add-people-section">
         <div className="small-12 medium-6 columns about-people">
           <div className="about-people-avatar">
@@ -47,7 +49,9 @@ function Matches() {
             </button>
           </div>
         </div>
-      
+        </div>
+        </div>
+        <div className="second-match-profile">
       <div className="row add-people-section">
         <div className="small-12 medium-6 columns about-people">
           <div className="about-people-avatar">
@@ -76,6 +80,8 @@ function Matches() {
           </div>
         </div>
       </div>
+      </div>
+      <div className="third-match-profile">
       <div className="row add-people-section">
         <div className="small-12 medium-6 columns about-people">
           <div className="about-people-avatar">
@@ -104,14 +110,14 @@ function Matches() {
           </div>
         </div>
       </div>
-      
+      </div>
       
     </div>
     </div>
 
 </div> 
 </div> 
-</div>      
+     
     )
 };
 

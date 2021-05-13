@@ -126,3 +126,58 @@
     text-decoration: underline;
   }
   
+
+.first-match-profile {
+  padding: 1rem;
+    border: 1px solid #ededed;
+    
+    overflow: scroll;
+    background: linear-gradient(
+        to right bottom,
+        rgba(72, 172, 211, 0.214),
+        rgba(255, 255, 255, 0.3)
+      );
+      border-radius: 2rem;
+      z-index: 2;
+      
+}
+.second-match-profile {
+  padding: 1rem;
+    border: 1px solid #ededed;
+    background-color: #ededed;
+    overflow: scroll;
+    background: linear-gradient(
+        to right bottom,
+        rgba(29, 136, 135, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      
+      z-index: 2;
+      
+}
+.third-match-profile {
+  padding: 1rem;
+    border: 1px solid #ededed;
+    background-color: #ededed;
+    overflow: scroll;
+    background: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+      
+      z-index: 2;
+      
+}
+
+.author-name {
+  font-size: 25px;
+  font-family: monospace;
+  text-decoration: underline;
+}
+
+.author-location {
+  font-size: 25px;
+  font-family: monospace;
+  text-decoration: underline;
+}

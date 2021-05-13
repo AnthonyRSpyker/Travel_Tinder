@@ -12,22 +12,22 @@ function App() {
   <Router>   
     <div>
     <Switch>
-      <Route exact path = "/">
+      <Route exact path ="/">
         <Landing />
       </Route>
-      <Route exact path = "/signup">
+      <Route exact path="/signup">
         <SignUp />
       </Route>
-      <Route exact path = "/signin">
+      <Route exact path="/signin">
         <SignIn /> 
       </Route>
-      <Route exact Path = "/matching_page">
+      <Route exact path="/matching_page">
         <Matching />
       </Route>
-      <Route exact Path = "/matches">
+      <Route exact path="/matches">
         <Matches />
       </Route>
-      <Route exact Path = "/profile">
+      <Route exact path="/profile">
         <Profile />
       </Route>
     </Switch> 
