@@ -301,7 +301,7 @@ const peopleSeed = [
 ]
 
 db.Users.deleteMany({})
-  .then(() => db.Test.collection.insertMany(peopleSeed))
+  .then(() => db.Users.collection.insertMany(peopleSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

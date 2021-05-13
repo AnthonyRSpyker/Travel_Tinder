@@ -3,28 +3,28 @@ const db = require('../models');
 
 
 //This is a template, it needs to be catered to what we need.
-router.post("/Users/create", ({body}, res) =>{
-    db.Test.create(body)
+router.post("/", ({body}, res) =>{
+    db.Users.create(body)
       .then(data => res.json(data))
       .catch(err => console.log(err));
   });
   
-  router.get('/test/read', (req, res) =>{
-    db.Test.find({})
+  router.get('/', (req, res) =>{
+    db.Users.find({})
       .then(data => res.json(data))
       .catch(err => console.log(err));
   });
   
-  router.get('/test/get/:id', ({params}, res) => {
-    db.Test.find({_id: params.id})
+  router.get('/:id', ({params}, res) => {
+    db.Users.find({_id: params.id})
       .then(data => res.json(data))
       .catch(err => console.error(err))
   })
   
-  router.put('/test/update/:id', ({params, body}, res) =>{
-    db.Test.findByIdAndUpdate(
+  router.put('/:id', ({params, body}, res) =>{
+    db.Users.findByIdAndUpdate(
       params.id,
-      {$set: {title: body.title, body: body.body}},
+      {$set: {img: body.img, age: body.age, gender: body.gender, countries: body.countries, bio: body.bio}},
       {new: true}
     )
       .then(data =>{
@@ -35,8 +35,8 @@ router.post("/Users/create", ({body}, res) =>{
       });
   });
   
-  router.delete('/test/delete/:id', ({params}, res) =>{
-    db.Test.findByIdAndDelete(params.id)
+  router.delete('/:id', ({params}, res) =>{
+    db.Users.findByIdAndDelete(params.id)
       .then(()=>{
         res.json(true);
       })
