@@ -5,7 +5,12 @@ const Schema= mongoose.Schema;
 const UserSchema= new Schema({
     username: {type: String,required: true, min:8},
     password: { type: String, required: true },
-    role: {type: String, enum: ['admin','user'],required: true},
+    role: {type: String, enum: ['admin','user'],required: false},
+    img: {type: String, required: false},
+    age: {type: Number, required: false},
+    gender: {type: String, required: false},
+    countries: [],
+    bio: {type:String, required: false},
     favs: [],
     matches: [],
     dislikes : []
@@ -38,8 +43,8 @@ UserSchema.methods.comparePassword= function(passwordClient, cb) {
     });
 };
 
-module.exports=mongoose.model('User', UserSchema)
+const Users = mongoose.model('User', UserSchema)
 
-
+module.exports = Users; 
 
 
