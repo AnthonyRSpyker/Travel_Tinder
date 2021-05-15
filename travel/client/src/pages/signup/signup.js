@@ -24,6 +24,18 @@ function Signup() {
               </span>
               <input className="input-group-field" type="text" placeholder="Full name" value=""></input>
             </div>
+            <div className="input-group">
+              <span className="input-group-label">
+                <i className="fa fa-user"></i>
+              </span>
+              <input className="input-group-field" type="text" placeholder="Age" value=""></input>
+            </div>
+            <div className="input-group">
+              <span className="input-group-label">
+                <i className="fa fa-user"></i>
+              </span>
+              <input className="input-group-field" type="text" placeholder="Prefered Gender" value=""></input>
+            </div>
 
             <div className="input-group">
               <span className="input-group-label">
@@ -43,18 +55,6 @@ function Signup() {
                 <i className="fa fa-key"></i>
               </span>
               <input className="input-group-field" type="text" placeholder="Confirm Password" value=""></input>
-            </div>
-            <div className="input-group">
-              <span className="input-group-label">
-                <i className="fa fa-key"></i>
-              </span>
-              <input className="input-group-field" type="text" placeholder="Age" value=""></input>
-            </div>
-            <div className="input-group">
-              <span className="input-group-label">
-                <i className="fa fa-key"></i>
-              </span>
-              <input className="input-group-field" type="text" placeholder="Prefered Gender" value=""></input>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@ function Signup() {
 
             <div>
               <input id="checkbox1" type="checkbox"></input>
-              <label className="checkbox1">Asian</label>
+              <label className="checkbox1">Asia</label>
             </div>
             <div>
               <input id="checkbox2" type="checkbox"></input>

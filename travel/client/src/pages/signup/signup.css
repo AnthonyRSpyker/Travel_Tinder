@@ -1,9 +1,8 @@
 body {
   background: url("https://images.unsplash.com/photo-1619467416348-6a782839e95f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80") center center no-repeat;
-  margin-bottom: 50px;
   border: 0 35px solid, color, white;
   border-radius: 30px;
-  overflow: none;
+  background-repeat: repeat-y;
   width: 95%;
   border-radius: 5%;
 }
@@ -16,10 +15,21 @@ h4 {
   font-family: monospace;
   font-size: 60px;
   color:coral;
-  margin-left: 20%;
+  margin-left: 15%;
   font-weight: bold;
+  -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
 
-}
+        text-align: center;
+        background: linear-gradient(90deg);
+        font-stretch: extra-expanded;
+        text-decoration: underline;  
+      }
+
+
 
 form .form-icons {
   border-radius: 25%;
@@ -35,13 +45,15 @@ form .form-icons h4 {
 form .form-icons .input-group-label {
   background-color: #1779ba;
   border-color: #1779ba;
+  border-radius: 10px;
  
   
 }
 
 form .form-icons .input-group-field {
   border-color: #1779ba;
-  
+  border-radius: 10px;
+  margin-right: 50%;
  
 }
 
@@ -53,6 +65,7 @@ form .form-icons .fa {
 }
 .input-group-field {
   border-color: #1779ba;
+  border-radius: 10px;
 };
 
 
