@@ -5,12 +5,12 @@ import "./ProfileCard.css"
 function FriendCard(props) {
   return (
 
-<div className="Entire Card">
+<div className="entire-card">
     <div className="card profile-card-action-icons">
     <div className="card-section">
     <div className="profile-card-header">
       <div className="profile-card-avatar">
-        <img className="avatar-image" src="https://i.imgur.com/3AeQRbR.jpg" alt="Harry Manchanda">
+        <img className="avatar-image" src="https://images.unsplash.com/photo-1588004051197-25cc43a9cbe3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80" alt="Harry Manchanda">
     </img>
     <div>
       <div className="profile-card-author">
