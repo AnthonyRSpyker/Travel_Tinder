@@ -1,4 +1,4 @@
-
+/* 
 .social-links {
   display: -ms-grid;
     display: grid;
@@ -74,4 +74,27 @@ h1 {
 
 .link {
   cursor: pointer;
+} */
+
+
+.top-bar {
+  background: #333;
+  color: #fefefe;
 }
+
+.top-bar .menu {
+  background: #333;
+}
+
+.top-bar .menu a {
+  color: #fefefe;
+}
+
+.top-bar  {
+  border: 0;
+}
+
+.top-bar {
+  border-color: transparent transparent transparent #fefefe;
+}
+
