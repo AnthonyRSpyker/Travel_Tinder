@@ -15,9 +15,9 @@ function Landing() {
        
       
       <div className="middle-content-section">
-        <h1>Super Compelling Headline</h1>
-        <button className="button_large" onClick = {() => history.push("../signin")}>Sign-In</button>
-        <button className="button_large" onClick = {() => history.push("../signup")}>Sign-Up</button>
+        <h1>Travel Buddies</h1>
+        <button className="button_large-1" onClick = {() => history.push("../signin")}>Sign-In</button>
+        <button className="button_large-2" onClick = {() => history.push("../signup")}>Sign-Up</button>
       </div>
     
       
