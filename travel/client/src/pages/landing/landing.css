@@ -72,18 +72,12 @@ body {
 .hero-full-screen .middle-content-section {
   text-align: center;
   color:darkorange;
-  font-size: xx-large;
+  font-size: 75px;
   font-family: monospace;
   margin: 25% 25%;
   padding: 1rem 1.5em; 
   border-radius: .5rem;
-  text-align: center; 
-  background: linear-gradient(
-    to right bottom,
-    rgba(0, 0, 0, 0.7),
-    rgba(255, 255, 255, 0.3)
-
-  );
+  text-decoration: underline;
 }
 
 .hero-full-screen .top-content-section {
@@ -94,25 +88,52 @@ body {
   padding: 5rem;
 }
 
-.button_large {
+.button_large-1{
   width: 100px;
   height: 50px;
   border-radius: 10px;
-  background-color:bisque;
+  background-color:cornflowerblue;
   font-size: 18px;
   font-family: monospace;
   opacity: 90%;
+  width: 20%;
+  border-right: 0.0625rem solid #cacaca;
+  text-align: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 15px
+  
+
+}
+
+.button_large-2{
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color:cornflowerblue;
+  font-family: monospace;
+  opacity: 90%;
+  width: 20%;
+  border-right: 0.0625rem solid #cacaca;
+  text-align: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 15px
+
 }
 
 .fade-in-text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+    font-family: monospace;
+    font-size: 50px;
     color:coral;
     animation: fadeIn linear 3s;
     -webkit-animation: fadeIn linear 3s;
     -moz-animation: fadeIn linear 3s;
     -o-animation: fadeIn linear 3s;
     -ms-animation: fadeIn linear 3s;
+    font-weight: bold;
+    text-decoration: underline;
   }
   
   @keyframes fadeIn {
@@ -140,4 +161,9 @@ body {
     100% {opacity:1;}
   };
   
-  
+  h1 {
+    font-family: monospace;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration: double;
+  }
