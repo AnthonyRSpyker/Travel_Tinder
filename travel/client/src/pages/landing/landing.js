@@ -10,6 +10,7 @@ function Landing() {
   const history = useHistory();
 
   return (
+    <div className="body-landing">
       <div className="hero-full-screen">
 
        
@@ -20,10 +21,10 @@ function Landing() {
         <button className="button_large-2" onClick = {() => history.push("../signup")}>Sign-Up</button>
       </div>
     
-      
+    
     
     </div>
-
+</div>
     )
 }
 
