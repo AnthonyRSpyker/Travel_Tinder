@@ -32,10 +32,10 @@ const SignIn=props=>{
 
     
   return (
-    
+   
     <form onSubmit={onSubmit}>
     <div className="sign-in-form">
-      <h4 className="text-center">Sign In</h4>
+      <h4 className="text-center">Sign-In</h4>
       <label for="sign-in-form-username">Username</label>
       <input type="text" className="sign-in-form-username" id="sign-in-form-username" onChange={onChange}/>
       <label for="sign-in-form-password">Password</label>
@@ -43,6 +43,7 @@ const SignIn=props=>{
       <button  type="submit" className="sign-in-form-button">Sign In</button>
     </div>
   </form>
+  
     );
 };
 
