@@ -10,7 +10,7 @@ function Landing() {
   const history = useHistory();
 
   return (
-    <div className="background">
+    <div className="body-landing">
       <div className="hero-full-screen">
 
        
