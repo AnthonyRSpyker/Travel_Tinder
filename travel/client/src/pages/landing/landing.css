@@ -78,10 +78,12 @@ body {
   padding: 1rem 1.5em; 
   border-radius: .5rem;
   text-decoration: underline;
+  
 }
 
 .hero-full-screen .top-content-section {
   width: 100%;
+  
 }
 
 .hero-full-screen .bottom-content-section {
@@ -167,3 +169,4 @@ body {
     text-decoration: underline;
     text-decoration: double;
   }
+ 
