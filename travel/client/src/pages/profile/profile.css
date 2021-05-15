@@ -19,6 +19,7 @@
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
+    opacity: 90%;
   }
   
   
@@ -141,4 +142,12 @@
       font-variant:unset;
       text-transform: uppercase;
       text-decoration: underline;
+      color: rgb(23, 228, 149);
+  }
+
+  .entire-card {
+    padding-left: 10%;
+    padding-right: 5%;
+    opacity: 90%;
+    
   }
