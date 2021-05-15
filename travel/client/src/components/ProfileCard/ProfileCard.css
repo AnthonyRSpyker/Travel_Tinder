@@ -1,144 +1,153 @@
 .profile-card-action-icons .card-section {
-    background-color: inherit;
-    padding: 0.5rem 0 0;
-   
-    margin-left: 10%;
-  }
+  background-color: inherit;
+  padding: 0.5rem 0 0;
+ 
+  margin-left: 10%;
+}
+
+.profile-card-action-icons .card-section .profile-card-header,
+.profile-card-action-icons .card-section .profile-card-about {
+  border-bottom: 0.0625rem solid #cacaca;
+  padding: 0.7rem 1rem;
+  padding-left: 10px;
+}
+
+.profile-card-action-icons .card-section .profile-card-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  opacity: 90%;
+}
+
+
+
+.profile-card-action-icons .card-section .profile-card-header .profile-card-avatar .avatar-image {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
   
-  .profile-card-action-icons .card-section .profile-card-header,
-  .profile-card-action-icons .card-section .profile-card-about {
-    border-bottom: 0.0625rem solid #cacaca;
-    padding: 0.7rem 1rem;
-    padding-left: 10px;
-  }
   
-  .profile-card-action-icons .card-section .profile-card-header {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
+}
+
+.profile-card-action-icons .card-section .profile-card-header .profile-card-author {
+  -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  margin-top: 0.3rem;
+  padding-bottom: 0;
+  font-family: monospace;
+}
+
+
+
+
+
+.profile-card-action-icons .card-section .profile-card-header .profile-card-author .author-description {
+  color: #8a8a8a;
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.profile-card-action-icons .card-section .profile-card-about .about-title {
+  text-transform: uppercase;
+  font-family: monospace;
   
-  
-  
-  .profile-card-action-icons .card-section .profile-card-header .profile-card-avatar .avatar-image {
-    border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
-    
-    
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-header .profile-card-author {
-    -webkit-flex: 1 0 0;
-        -ms-flex: 1 0 0px;
-            flex: 1 0 0;
-    margin-top: 0.3rem;
-    padding-bottom: 0;
+}
+
+.profile-card-action-icons .card-section .profile-card-about .separator-left {
+  text-align: left;
+  font-family: monospace;
+}
+
+.profile-card-action-icons .card-section .profile-card-about .separator-left::before, .profile-card-action-icons .card-section .profile-card-about .separator-left::after {
+  display: table;
+  content: ' ';
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.profile-card-action-icons .card-section .profile-card-about .separator-left::after {
+  clear: both;
+}
+
+.profile-card-action-icons .card-section .profile-card-about .separator-left::after {
+  position: relative;
+  width: 3rem;
+  border-bottom: 0.125rem solid #1779ba;
+  margin: 0.3rem auto 0;
+  margin-left: 0;
+}
+
+.profile-card-action-icons .card-section .profile-card-about .about-content {
+  margin-bottom: 0;
+  font-size: 50%;
+}
+
+
+.profile-card-action-icons .card-section .profile-card-about .about-skills ul.arrow {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  font-size: 40%;
+}
+
+.profile-card-action-icons .card-section .profile-card-about .about-skills ul.arrow li:before {
+  content: '\f006';
+  font-family: 'FontAwesome';
+  float: left;
+  color: #1779ba;
+  margin-right: 0.5rem;
+  font-size: 100%;
+}
+
+.profile-card-action-icons .card-section .profile-card-action {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-card-action-icons .card-section .profile-card-action .action-area {
+  width: 20%;
+  border-right: 0.0625rem solid #cacaca;
+  text-align: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.profile-card-action-icons .card-section .profile-card-action .action-area:last-of-type {
+  border-right:aqua;
+}
+
+.profile-card-action-icons .card-section .profile-card-action .action-area .action-anchor.has-tip {
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.profile-card-action-icons .card-section .profile-card-action .action-area .action-anchor .fa {
+  color: #1779ba;
+}
+
+h5 {
+    font-size:xx-large;
     font-family: monospace;
-  }
-  
-  
-  
-  
-  
-  .profile-card-action-icons .card-section .profile-card-header .profile-card-author .author-description {
-    color: #8a8a8a;
-    font-size: 25px;
-    font-family: monospace;
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-about .about-title {
+    font-weight: bold;
+    font-variant:unset;
     text-transform: uppercase;
-    font-family: monospace;
-    
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-about .separator-left {
-    text-align: left;
-    font-family: monospace;
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-about .separator-left::before, .profile-card-action-icons .card-section .profile-card-about .separator-left::after {
-    display: table;
-    content: ' ';
-    -webkit-flex-basis: 0;
-        -ms-flex-preferred-size: 0;
-            flex-basis: 0;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-about .separator-left::after {
-    clear: both;
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-about .separator-left::after {
-    position: relative;
-    width: 3rem;
-    border-bottom: 0.125rem solid #1779ba;
-    margin: 0.3rem auto 0;
-    margin-left: 0;
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-about .about-content {
-    margin-bottom: 0;
-    font-size: 50%;
-  }
+    text-decoration: underline;
+    color: rgb(23, 228, 149);
+}
 
+.entire-card {
+  padding-left: 10%;
+  padding-right: 5%;
+  opacity: 90%;
   
-  .profile-card-action-icons .card-section .profile-card-about .about-skills ul.arrow {
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
-    margin-bottom: 0;
-    font-size: 40%;
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-about .about-skills ul.arrow li:before {
-    content: '\f006';
-    font-family: 'FontAwesome';
-    float: left;
-    color: #1779ba;
-    margin-right: 0.5rem;
-    font-size: 100%;
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-action {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .profile-card-action-icons .card-section .profile-card-action .action-area {
-    width: 20%;
-    border-right: 0.0625rem solid #cacaca;
-    text-align: center;
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-action .action-area:last-of-type {
-    border-right:aqua;
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-action .action-area .action-anchor.has-tip {
-    border-bottom: none;
-    cursor: pointer;
-  }
-  
-  .profile-card-action-icons .card-section .profile-card-action .action-area .action-anchor .fa {
-    color: #1779ba;
-  }
-  
-  h5 {
-      font-size:xx-large;
-      font-family: monospace;
-      font-weight: bold;
-      font-variant:unset;
-      text-transform: uppercase;
-      text-decoration: underline;
-  }
+}
