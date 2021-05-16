@@ -36,6 +36,8 @@
     font-size:xx-large;
     margin-bottom: 1rem;
     text-decoration: underline;
+    font-family: monospace;
+    text-decoration: overline;
   }
   /* this is text box username  */
   .sign-in-form input {
@@ -67,11 +69,11 @@
     background-color: transparent;
     text-transform: uppercase;
     letter-spacing: 3px;
-     
-    width: 75%;
+    width: 30%;
     padding: 1rem;
     transition: all ease .4s;
-    background-color:cornflowerblue
+    background-color:cornflowerblue;
+    font-family: monospace;
   }
   
   .sign-in-form-button:hover {
