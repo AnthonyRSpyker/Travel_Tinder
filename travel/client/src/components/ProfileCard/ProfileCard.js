@@ -29,16 +29,14 @@ function FriendCard(props) {
     </div>
     {/* insert countries, mapping function. */}
     <div className="small-6 columns">
-      
-          <ul className="arrows"> Countries of interest
-            <li>Maths</li>
-            <li>Dancing</li>
-            <li>Smiling</li>
-          </ul>
+      {/* This should map over the array of countries a person wants to travel to
+      I think it needs an actual input first.   */}
+          {/* <ul className="arrows"> Countries of interest
+            {countries.map((countries) => {
+              return <li>{countries}</li>
+            })}
+          </ul> */}
         </div>
-   
-      
-      
       </div>
     </div>
   </div>
