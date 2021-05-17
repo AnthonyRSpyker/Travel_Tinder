@@ -48,7 +48,7 @@ const Signup=props=> {
         resetForm();
         if(!message.msgError){
           timerID=setTimeout(()=>{
-            props.history.push('/signup')
+            props.history.push('/profile')
           },2000)
         }
       });
