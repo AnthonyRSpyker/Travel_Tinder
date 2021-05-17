@@ -65,13 +65,7 @@ userRouter.get('/authenticated', passport.authenticate('jwt', {session:false}), 
     res.status(200).json({isAuthenticated:true, user: {username,role}})
 });
 
-//userRouter.post('/signupform',passport.authenticate('jwt',{session:false}), (req,res)=>{
-  //  const signUp= new Signup(req.body);
-  //signUp.save(err=>{
-      //if err
-    //else{ req.user.signUps.push(signUp)}
- // })
-//})
+
 
 
 

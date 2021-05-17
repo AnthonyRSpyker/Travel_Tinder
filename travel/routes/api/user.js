@@ -3,6 +3,10 @@ const userRouter=express.Router();
 const passport= require('passport');
 const passportConfig=require('../../config/passport');
 const JWT=require('jsonwebtoken')
+const personCon=require('../../controllers/personsController');
+const favCon=require('../../controllers/matchesController');
+const disCon=require('../../controllers/dislikeController')
+
 const User= require('../../models/sing-in');
 
 
@@ -65,13 +69,27 @@ userRouter.get('/authenticated', passport.authenticate('jwt', {session:false}), 
     res.status(200).json({isAuthenticated:true, user: {username,role}})
 });
 
-//userRouter.post('/signupform',passport.authenticate('jwt',{session:false}), (req,res)=>{
-  //  const signUp= new Signup(req.body);
-  //signUp.save(err=>{
-      //if err
-    //else{ req.user.signUps.push(signUp)}
- // })
-//})
+userRouter.post('/profile',passport.authenticate('jwt',{session:false}), personCon.store, (req,res)=>{
+    const profile= new User(req.body);
+    profile.save(err=>{
+        if(err)
+            res.status(500).json({message:{msgBody:"And Error Has Occured", msgError: true}});
+        else{
+            req.user.push(profile);
+            req.user.save(err=>{
+                if(err)
+                    res.status(500).json({message:{msgBody:"And Error Has Occured", msgError: true}});
+
+                else
+                    res.status(200).json({message: {msgBody: "Profile Page SuccessFully Created"}})
+
+            })
+        }
+    })
+});
+
+userRouter.post('/:userId/favs', favCon.store)
+userRouter.post('/:userId/dislikes', disCon.store)
 
 
 

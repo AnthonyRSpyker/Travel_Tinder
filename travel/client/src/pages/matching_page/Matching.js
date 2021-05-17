@@ -6,10 +6,24 @@ import API from "../../utils/API"
 import "./matching_page.css"
 
 
-function Matching (props) {
+function Matching (props){
     
-    const [person, setPerson] = useState({})
+    const [users, setUsers] = useState([]);
+    const [matchUsers, setMatchUsers]= useState(null);
+    const {id}=useParams();
     
+    useEffect(() => {
+
+        function loadUsers(){
+            const {data}= API.getPerson(),{
+                headers: {
+                    user: id
+                }
+            }
+
+            setUsers(data)
+        }
+    })
     const {id} = useParams()
       useEffect(() => {
         API.getPerson(id)
