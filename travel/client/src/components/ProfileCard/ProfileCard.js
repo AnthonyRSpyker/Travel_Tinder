@@ -18,7 +18,7 @@ function FriendCard(props) {
     <div>
       <div className="profile-card-author">
         {/* insert name */}
-      <h5 className="about-title separator-left">{props.unsername}</h5>
+      <h5 className="about-title separator-left">{props.unsername}jim</h5>
       </div>
     </div>
     <div>
