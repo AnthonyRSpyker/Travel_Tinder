@@ -65,14 +65,24 @@ userRouter.get('/authenticated', passport.authenticate('jwt', {session:false}), 
     res.status(200).json({isAuthenticated:true, user: {username,role}})
 });
 
-//userRouter.post('/signupform',passport.authenticate('jwt',{session:false}), (req,res)=>{
-  //  const signUp= new Signup(req.body);
-  //signUp.save(err=>{
-      //if err
-    //else{ req.user.signUps.push(signUp)}
- // })
-//})
+userRouter.post('/profile',passport.authenticate('jwt',{session:false}), (req,res)=>{
+    const profile= new User(req.body);
+    profile.save(err=>{
+        if(err)
+            res.status(500).json({message:{msgBody:"And Error Has Occured", msgError: true}});
+        else{
+            req.user.push(profile);
+            req.user.save(err=>{
+                if(err)
+                    res.status(500).json({message:{msgBody:"And Error Has Occured", msgError: true}});
 
+                else
+                    res.status(200).json({message: {msgBody: "Profile Page SuccessFully Created"}})
+
+            })
+        }
+    })
+}
 
 
 module.exports=userRouter;

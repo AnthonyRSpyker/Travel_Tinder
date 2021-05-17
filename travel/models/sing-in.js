@@ -11,12 +11,16 @@ const UserSchema= new Schema({
     gender: {type: String, required: false},
     countries: [],
     bio: {type:String, required: false},
-    favs: [],
+    favs: [{
+        type:Schema.Types.ObjectId,
+        ref:'User'
+    }],
     matches: [],
-    dislikes : []
-
-
-
+    dislikes : [{
+        type:Schema.Types.ObjectId,
+        ref:'User'
+    }],
+ 
 });
 
 UserSchema.pre('save', function(next){
