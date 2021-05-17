@@ -24,6 +24,8 @@ function Matching (props) {
             <ProfileCard 
                 img = {person.img}
                 username = {person.username}
+                age = {person.age}
+                countries = {person.countries}
 
             />
         </div>
