@@ -133,6 +133,10 @@ const Signup=props=> {
                 <input id="checkbox4" type="checkbox"></input>
                 <label className="checkbox4">German</label>
               </div>
+              <div>
+                <input id="checkbox4" type="checkbox"></input>
+                <label className="checkbox4">English</label>
+              </div>
             </div>
             
           </div>
