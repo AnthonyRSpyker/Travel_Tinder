@@ -8,6 +8,7 @@ function CardBtn(props) {
     <button onClick={props.onClick} 
        className={`card-btn ${props["data-value"]}`} 
       data-value={props["data-value"]}  class="button-hover-like button"><span>Like me</span><i class="fa fa-heart"></i></button>
+      
 
     // <button  
     //   onClick={props.onClick} 
