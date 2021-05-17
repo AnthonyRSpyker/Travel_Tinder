@@ -1,6 +1,7 @@
 import React from "react"
 import "./Matches.css"
 import Navbar from "../../components/Navbar/Navbar.js"
+import MatchesDiv from "../../components/Matches/matches.js"
 
 function Matches() {
 
@@ -9,7 +10,7 @@ function Matches() {
     return (
        <div>
         <Navbar /> 
-       
+       <MatchesDiv />
     
     <div className="people-you-might-know">
       <div className="add-people-header">

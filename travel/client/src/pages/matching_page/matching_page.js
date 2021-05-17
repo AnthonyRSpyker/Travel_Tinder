@@ -8,22 +8,22 @@ import "./matching_page.css"
 
 function Matching (props){
     
-    const [users, setUsers] = useState([]);
+    const [person, setPerson] = useState([]);
     const [matchUsers, setMatchUsers]= useState(null);
-    const {id}=useParams();
+   
     
-    useEffect(() => {
+    // useEffect(() => {
 
-        function loadUsers(){
-            const {data}= API.getPerson(),{
-                headers: {
-                    user: id
-                }
-            }
+    //     function loadUsers(){
+    //         const {data}= API.getPerson(),{
+    //             headers: {
+    //                 user: id
+    //             }
+    //         }
 
-            setUsers(data)
-        }
-    })
+    //         setUsers(data)
+    //     }
+    // })
     const {id} = useParams()
       useEffect(() => {
         API.getPerson(id)
