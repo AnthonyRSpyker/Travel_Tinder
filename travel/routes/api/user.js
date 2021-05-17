@@ -3,6 +3,10 @@ const userRouter=express.Router();
 const passport= require('passport');
 const passportConfig=require('../../config/passport');
 const JWT=require('jsonwebtoken')
+const personCon=require('../../controllers/personsController');
+const favCon=require('../../controllers/matchesController');
+const disCon=require('../../controllers/dislikeController')
+
 const User= require('../../models/sing-in');
 
 
@@ -65,7 +69,7 @@ userRouter.get('/authenticated', passport.authenticate('jwt', {session:false}), 
     res.status(200).json({isAuthenticated:true, user: {username,role}})
 });
 
-userRouter.post('/profile',passport.authenticate('jwt',{session:false}), (req,res)=>{
+userRouter.post('/profile',passport.authenticate('jwt',{session:false}), personCon.store, (req,res)=>{
     const profile= new User(req.body);
     profile.save(err=>{
         if(err)
@@ -82,7 +86,11 @@ userRouter.post('/profile',passport.authenticate('jwt',{session:false}), (req,re
             })
         }
     })
-}
+});
+
+userRouter.post('/:userId/favs', favCon.store)
+userRouter.post('/:userId/dislikes', disCon.store)
+
 
 
 module.exports=userRouter;
