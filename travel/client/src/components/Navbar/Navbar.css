@@ -80,6 +80,7 @@ h1 {
 .top-bar {
   background: #333;
   color: #fefefe;
+  font-family: monospace;
 }
 
 .top-bar .menu {
@@ -98,3 +99,6 @@ h1 {
   border-color: transparent transparent transparent #fefefe;
 }
 
+.menu-text {
+  font-family: monospace;
+}

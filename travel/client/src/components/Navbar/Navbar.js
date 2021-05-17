@@ -21,13 +21,13 @@ const unauthenticatedNavBar=()=>{
     return (
         <>
         <Link to="/">
-            <li className="nav-item nav-link">Home</li>
+            <li className="nav-item nav-link">Home-</li>
         </Link>
         <Link to="/signin">
-            <li className="nav-item nav-link">Sign In</li>
+            <li className="nav-item nav-link">Sign In-</li>
         </Link>
         <Link to="/signup">
-            <li className="nav-item nav-link">Sign Up</li>
+            <li className="nav-item nav-link">Sign Up-</li>
         </Link>
 
         </>
@@ -62,7 +62,7 @@ return (
     
         <div className="top-bar">
         <ul class="menu">
-        <li class="menu-text">Site Title</li>
+        <li class="menu-text">Travel Buddies:</li>
         {!isAuthenticated ? unauthenticatedNavBar(): authenticatedNavBar()}
       </ul>
             
