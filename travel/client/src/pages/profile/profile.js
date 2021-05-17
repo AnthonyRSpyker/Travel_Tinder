@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState} from "react";
+import { Link, useParams } from "react-router-dom";
 // import CardBtn from "../CardBtn/CardBtn"
-import "./profile.css"
-import Navbar from "../../components/Navbar/Navbar.js"
+import Navbar from "../../components/Navbar/Navbar.js";
+import API from "../../utils/API";
+import "./profile.css";
 
-function FriendCard(props) {
+function FriendCard() {
+
+  // this may be wrong.  I may have to pass in props.
+  const [person, setPerson] = useState({})
+    
+    const {id} = useParams()
+      useEffect(() => {
+        API.getPerson(id)
+          .then(res => setPerson(res.data))
+          .catch(err => console.log(err));
+      }, [])
+
+
   return (
 
 
@@ -18,15 +32,18 @@ function FriendCard(props) {
     <div>
       <div className="profile-card-author">
         
-      <h5 className="about-title separator-left">User Name</h5>
+      <h5 className="about-title separator-left">{person.username}</h5>
       </div>
     </div>
     <div className="profile-card-about">
     <div className="row about-skills">
         <div className="small-6 columns">
           <ul className="arrow">
-            <li>Age</li>
-            <li>Perfered Gender</li>
+            <li>{person.age}</li>
+            <li>{person.gender}</li>
+
+            {/* need to figure out how to deal with countries listing, should be on the 
+            profilecard.js, use that. */}
             <h5 className="about-title separator-left">Countries I want to travel too</h5>
             <li>France</li>
           </ul>
@@ -40,7 +57,7 @@ function FriendCard(props) {
         </div>
         <h5 className="about-title separator-left">About Me</h5>
       <p className="about-content">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem eveniet nulla quae ullam sit iure voluptatum, nesciunt voluptas perferendis, minus natus in quaerat?
+        {person.bio}
       </p>
       </div>
     </div>

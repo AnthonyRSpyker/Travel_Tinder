@@ -122,17 +122,11 @@
   padding-bottom: 0.4rem;
 }
 
-.profile-card-action-icons .card-section .profile-card-action .action-area:last-of-type {
-  border-right:aqua;
-}
+
 
 .profile-card-action-icons .card-section .profile-card-action .action-area .action-anchor.has-tip {
   border-bottom: none;
   cursor: pointer;
-}
-
-.profile-card-action-icons .card-section .profile-card-action .action-area .action-anchor .fa {
-  color: #1779ba;
 }
 
 h5 {
@@ -146,8 +140,9 @@ h5 {
 }
 
 .entire-card {
-  padding-left: 10%;
-  padding-right: 5%;
+  margin-top: 3%;
+  margin-left:  25%;
+  margin-right: 25%;
   opacity: 90%;
   
 }

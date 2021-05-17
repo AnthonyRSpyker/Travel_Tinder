@@ -1,1 +1,1 @@
-const db=require('../models/sing-in')
+const db = require('../models')
