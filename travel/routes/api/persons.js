@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const db = require('../models');
+const db = require('../controllers');
 
 
 //This is a template, it needs to be catered to what we need.
