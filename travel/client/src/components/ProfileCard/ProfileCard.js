@@ -3,8 +3,11 @@ import CardBtn from "../CardBtn/CardBtn"
 import "./ProfileCard.css"
 
 
-function FriendCard(props) {
-  const countries = props.countries
+function FriendCard ({ person, likedOrDisliked }) {
+  
+
+  const {__id, username, img, age, countries} = person
+
   return (
 
 <div className="entire-card">
@@ -12,44 +15,40 @@ function FriendCard(props) {
     <div className="card-section">
     <div className="profile-card-header">
     <div className="profile-card-avatar">
-        {/* insert image */}
-        <img className="avatar-image" src= {props.img} alt="Harry Manchanda">
+        
+        <img className="avatar-image" src={img} alt="Harry Manchanda">
     </img>
     <div>
       <div className="profile-card-author">
-        {/* insert name */}
-      <h5 className="about-title separator-left">{props.unsername}jim</h5>
+        
+      <h5 className="about-title separator-left">{username}</h5>
       </div>
     </div>
     <div>
       <div className="profile-card-author">
-        {/* insert age*/}
-      <h5 className="about-title separator-left">{props.age}</h5>
+        
+      <h5 className="about-title separator-left">{age}</h5>
       </div>
     </div>
-    {/* insert countries, mapping function. */}
-    <div className="small-6 columns">
-      {/* This should map over the array of countries a person wants to travel to
-      I think it needs an actual input first.   */}
-          {/* <ul className="arrows"> Countries of interest
+        <div className="small-6 columns">
+          {<ul className="arrows"> Countries of interest
             {countries.map((countries) => {
               return <li>{countries}</li>
             })}
-          </ul> */}
+          </ul>
+        }
         </div>
       </div>
     </div>
   </div>
 </div>
 
-
-    
-      <CardBtn onClick={props.handleBtnClick}
+      <CardBtn onClick={() => likedOrDisliked(__id, "ADD_TO_LIKED")}
         data-value="pass"
       />
       
       
-      <CardBtn onClick={props.handleBtnClick}
+      <CardBtn onClick={() => likedOrDisliked(__id, "ADD_TO_DISLIKED")}
         data-value="pick"
       />
 </div>
