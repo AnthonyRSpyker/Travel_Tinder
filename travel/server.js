@@ -27,7 +27,7 @@
  const  app= express();
  const cookieParser= require('cookie-parser');
  const mongoose= require('mongoose')
- const routes= require('./routes/api/index')
+ const routes= require('./routes/index')
  app.use(cookieParser());
  app.use(express.json());
 

@@ -3,7 +3,7 @@ const userRouter=express.Router();
 const passport= require('passport');
 const passportConfig=require('../../config/passport');
 const JWT=require('jsonwebtoken')
-const personCon=require('../../controllers/personsController');
+
 const favCon=require('../../controllers/matchesController');
 const disCon=require('../../controllers/dislikeController')
 
@@ -24,14 +24,14 @@ userRouter.post('/signup', (req,res)=>{
         if(err)
             res.status(500).json({message: {msgBody: "Error has occured", msgError: true, error: err}});
         if(user)
-            res.status(400).json({message: {msgBody: "Username Already Taken", msgError: true}});
+            res.status(400).json({message: {msgBody: "Username Already Taken", msgError: err}});
         else{
             const newUser= new User({username,password,role, img, age, countries, bio});
             newUser.save(err=>{
                 if(err)
-                    res.status(500).json({message: {msgBody: "Error has occured", msgError: true}});
+                    res.status(500).json({message: {msgBody: "Error has occured", msgError: err}});
                 else
-                    res.status(201).json({message: {msgBody: "Sucessfully Created Account", msgError: false}});
+                    res.status(201).json({message: {msgBody: "Sucessfully Created Account", msgError: err}});
                 
 
             })
@@ -69,16 +69,16 @@ userRouter.get('/authenticated', passport.authenticate('jwt', {session:false}), 
     res.status(200).json({isAuthenticated:true, user: {username,role}})
 });
 
-userRouter.post('/profile',passport.authenticate('jwt',{session:false}), personCon.store, (req,res)=>{
+userRouter.post('/profile',passport.authenticate('jwt',{session:false}), (req,res)=>{
     const profile= new User(req.body);
     profile.save(err=>{
         if(err)
-            res.status(500).json({message:{msgBody:"And Error Has Occured", msgError: true}});
+            res.status(500).json({message:{msgBody:"And Error Has Occured", msgError: err}});
         else{
             req.user.push(profile);
             req.user.save(err=>{
                 if(err)
-                    res.status(500).json({message:{msgBody:"And Error Has Occured", msgError: true}});
+                    res.status(500).json({message:{msgBody:"And Error Has Occured", msgError: err}});
 
                 else
                     res.status(200).json({message: {msgBody: "Profile Page SuccessFully Created"}})

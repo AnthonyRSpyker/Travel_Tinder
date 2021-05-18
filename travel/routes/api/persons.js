@@ -1,28 +1,28 @@
 const router = require('express').Router();
-const db = require('../controllers');
+const db = require('../../models/sing-in');
 
 
 //This is a template, it needs to be catered to what we need.
 router.post("/", ({body}, res) =>{
-    db.Users.create(body)
+    db.create(body)
       .then(data => res.json(data))
       .catch(err => console.log(err));
   });
   
   router.get('/', (req, res) =>{
-    db.Users.find({})
+    db.find({})
       .then(data => res.json(data))
       .catch(err => console.log(err));
   });
   
   router.get('/:id', ({params}, res) => {
-    db.Users.find({_id: params.id})
+    db.find({_id: params.id})
       .then(data => res.json(data))
       .catch(err => console.error(err))
   })
   
   router.put('/:id', ({params, body}, res) =>{
-    db.Users.findByIdAndUpdate(
+    db.findByIdAndUpdate(
       params.id,
       {$set: {img: body.img, age: body.age, gender: body.gender, countries: body.countries, bio: body.bio}},
       {new: true}
@@ -36,7 +36,7 @@ router.post("/", ({body}, res) =>{
   });
   
   router.delete('/:id', ({params}, res) =>{
-    db.Users.findByIdAndDelete(params.id)
+    db.findByIdAndDelete(params.id)
       .then(()=>{
         res.json(true);
       })
