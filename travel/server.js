@@ -27,7 +27,8 @@
  const  app= express();
  const cookieParser= require('cookie-parser');
  const mongoose= require('mongoose')
- const routes= require('./routes/index.js')
+ const routes= require('./routes/index')
+
  app.use(cookieParser());
  app.use(express.json());
  app.use(routes);
@@ -40,7 +41,7 @@
    useFindAndModify: false 
  });
 
-
+app.use(routes);
 
  app.listen(PORT,()=>{
      console.log('express sever started')

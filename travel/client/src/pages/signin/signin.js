@@ -18,7 +18,7 @@ const SignIn=props=>{
   }
   const onSubmit= e =>{
     e.preventDefault();
-    AuthService.login(user).then(data=>{
+    AuthService.signin(user).then(data=>{
         const {isAuthenticated,user,message}= data;
         if(isAuthenticated){
             authContext.setUser(user);
