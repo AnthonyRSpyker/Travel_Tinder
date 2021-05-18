@@ -228,10 +228,8 @@ const Signup=props=> {
             <label className="checkbox2">Santiago de Chile, Chile</label>
           </div>
         </div>
-
-      </form>
-
-
+        </fieldset>
+            </form>
 
         <fieldset id="group-3">
         <div className="status-update-input-box">
@@ -251,9 +249,7 @@ const Signup=props=> {
 
 
         <button className="button expanded" type="submit">Sign Up</button>
-
-     
-
+          
 
     </div>
   )
