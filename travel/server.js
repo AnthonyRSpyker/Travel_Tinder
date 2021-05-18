@@ -28,8 +28,10 @@
  const cookieParser= require('cookie-parser');
  const mongoose= require('mongoose')
  const routes= require('./routes/index')
+
  app.use(cookieParser());
  app.use(express.json());
+ app.use(routes);
 
  const PORT = process.env.PORT || 3002;
  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/travelt", {
