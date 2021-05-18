@@ -1,11 +1,3 @@
-let mongoose = require("mongoose");
-let db = require("../models");
-
-mongoose.connect("mongodb://localhost/travelt", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
-
 const peopleSeed = [
     {
         __id: 0,
@@ -415,15 +407,4 @@ const peopleSeed = [
     }
 ]
 
-db.Users.deleteMany({})
-  .then(() => db.Users.collection.insertMany(peopleSeed))
-  .then(data => {
-    console.log(data.result.n + " records inserted!");
-    process.exit(0);
-  })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
-
-  export default peopleSeed
+export default peopleSeed
