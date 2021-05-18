@@ -18,12 +18,9 @@ const Signup=props=> {
 
     const[message,setMessage]=useState(null);
     
-    let timerID=useRef(null);
-
     useEffect(()=>{
-      return()=>{
-        clearTimeout(timerID);
-      }
+      // if we needed to load data when this component is first loaded you put it here. on signup we don't so this can be removed later
+    
     },[]);
 
     const onChange= e=>{
@@ -42,16 +39,21 @@ const Signup=props=> {
     }
     const onSubmit=e=>{
       e.preventDefault();
-      AuthService.signup(user).then(data=>{
+      AuthService.signup(user)
+      .then(resp => resp.json())
+      .then(data=>{
         const{message}=data;
         setMessage(message);
         resetForm();
         if(!message.msgError){
-          timerID=setTimeout(()=>{
-            props.history.push('/profile')
-          },2000)
+          props.history.push('/profile')
+          //does this redirect the user????
         }
-      });
+      })
+      .catch(err => {
+        alert("Error occurred see logs");
+        console.log(err)
+     })
     }
 
   return (
@@ -61,6 +63,7 @@ const Signup=props=> {
 
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"></link>
       <form onSubmit={onSubmit}>
+      <fieldset id="group-1">
         <div className="form-icons">
           <h4>Register for an account</h4>
           <div className="all-form">
@@ -225,11 +228,11 @@ const Signup=props=> {
             <label className="checkbox2">Santiago de Chile, Chile</label>
           </div>
         </div>
+        </fieldset>
 
 
-        
+        <fieldset id="group-3">
         <div className="status-update-input-box">
-          <form>
             <div className="row input-box-container">
               <div className="columns">
                 <label> Personal Bio Seciton (500 characters max.)
@@ -237,55 +240,16 @@ const Signup=props=> {
                 </label>
               </div>
             </div>
-            {/* <div className="row medium-collapse user-action-container">
-              <div className="small-12 medium-7 columns">
-                <div className="user-action-box">
-                  <div className="action-area">
-                    <a href="#" className="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Upload a Photo">
-                      <i className="fa fa-picture-o" aria-hidden="true"></i>
-                      <span className="show-for-sr">Upload a Photo</span>
-                    </a>
-                  </div>
-                  <div className="action-area">
-                    <a href="#" className="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Upload a Video">
-                      <i className="fa fa-video-camera" aria-hidden="true"></i>
-                      <span className="show-for-sr">Upload a Video</span>
-                    </a>
-                  </div>
-                  <div className="action-area">
-                    <a href="#" className="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Check in">
-                      <i className="fa fa-map-marker" aria-hidden="true"></i>
-                      <span className="show-for-sr">Check in</span>
-                    </a>
-                  </div>
-                  <div className="action-area">
-                    <a href="#" className="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add a Feeling">
-                      <i className="fa fa-smile-o" aria-hidden="true"></i>
-                      <span className="show-for-sr">Add a Feeling</span>
-                    </a>
-                  </div>
-                  <div className="action-area">
-                    <a href="#" className="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Tag a Friend">
-                      <i className="fa fa-tags" aria-hidden="true"></i>
-                      <span className="show-for-sr">Tag a Friend</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="small-12 medium-5 columns">
-                <div className="user-submit-box">
-                  <input type="submit" className="button small" value="POST"></input>
-                </div>
-              </div>
-            </div> */}
-          </form>
+            </div>
+        </fieldset>
+
           {message ? <Message message={message}/> : null}
-        </div>
+        
 
 
 
         <button className="button expanded" type="submit">Sign Up</button>
-      </form>
+        </form>    
 
     </div>
   )
