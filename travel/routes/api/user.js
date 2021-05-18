@@ -19,14 +19,14 @@ const signToken= userID=>{
 
 
 userRouter.post('/signup', (req,res)=>{
-    const{username,password,role}=req.body;
+    const{username,password,role,img, age, countries,bio}=req.body;
     User.findOne({username},(err,user)=>{
         if(err)
-            res.status(500).json({message: {msgBody: "Error has occured", msgError: true}});
+            res.status(500).json({message: {msgBody: "Error has occured", msgError: true, error: err}});
         if(user)
             res.status(400).json({message: {msgBody: "Username Already Taken", msgError: true}});
         else{
-            const newUser= new User({username,password,role});
+            const newUser= new User({username,password,role, img, age, countries, bio});
             newUser.save(err=>{
                 if(err)
                     res.status(500).json({message: {msgBody: "Error has occured", msgError: true}});

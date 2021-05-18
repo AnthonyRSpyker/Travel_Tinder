@@ -225,6 +225,7 @@ const Signup=props=> {
             <label className="checkbox2">Santiago de Chile, Chile</label>
           </div>
         </div>
+      </form>
 
 
         
@@ -285,7 +286,7 @@ const Signup=props=> {
 
 
         <button className="button expanded" type="submit">Sign Up</button>
-      </form>
+     
 
     </div>
   )

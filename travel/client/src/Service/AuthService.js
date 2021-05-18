@@ -11,7 +11,7 @@ export default {
     },
 
     signup: user=>{
-        return fetch('/user/signup',{
+        return fetch('/signup',{
             method: "POST",
             body: JSON.stringify(user),
             headers: {
